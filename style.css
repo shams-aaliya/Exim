@@ -64,7 +64,7 @@ header nav ul li {
   text-align: left;
 }
 .hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 10vw, 6rem);
   margin-top: 7rem;
   padding: 0;
   color: var(--blue);
@@ -177,4 +177,10 @@ header nav ul li {
   margin: 1rem;
   padding: 1rem;
   background-color: #b9cbdd;
+}
+.contact .form form {
+  position: relative;
+}
+.contact .form label {
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */

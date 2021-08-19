@@ -176,11 +176,36 @@ header nav ul li {
 .contact .form {
   margin: 1rem;
   padding: 1rem;
-  background-color: #b9cbdd;
+  background-color: var(--light-grey);
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 600;
+  box-shadow: 0px 8px 24px #959da5;
 }
-.contact .form form {
-  position: relative;
+.contact .form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
+  border: none;
 }
 .contact .form label {
-  position: absolute;
+  font-size: 0.8rem;
+}
+.contact .form .display-message {
+  display: none;
+}
+.contact .form input[type=submit] {
+  margin-top: 1.2rem;
+  border: 2px solid var(--blue);
+  background-color: var(--blue);
+  color: #fff;
+}
+.contact .companycontactdetails {
+  margin-top: 1.5rem;
+}
+.contact .companycontactdetails .contact-item {
+  padding: 1.3rem;
+  margin: 1rem;
+  background-color: var(--light-grey);
 }/*# sourceMappingURL=style.css.map */

@@ -219,6 +219,54 @@ header nav ul li {
 }
 .contact .companycontactdetails .contact-item {
   padding: 1.3rem;
-  margin: 1rem;
   background-color: var(--light-grey);
+}
+.contact .companycontactdetails .contact-item p {
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 1rem;
+  background-color: var(--blue);
+  color: #ffffff;
+}
+footer .logo img {
+  padding-top: 1.5rem;
+  width: 9rem;
+}
+footer .logo p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+footer .social-links {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1rem;
+}
+footer .social-links p {
+  margin-top: 1rem;
+}
+footer .social-links ul li {
+  list-style: none;
+}
+footer .social-links ul li a i {
+  color: #ffffff;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+footer .call {
+  padding-bottom: 1.5rem;
+}
+footer .call p {
+  font-weight: 600;
+  margin: 0.2rem;
+}
+footer .copyright {
+  background-color: var(--light-grey);
+}
+footer .copyright p {
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

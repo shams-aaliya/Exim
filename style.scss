@@ -269,11 +269,73 @@ header{
 
         .contact-item{
             padding: 1.3rem; 
-            margin: 1rem;   
+            
             background-color: var(--light-grey);
+
+            p{
+                font-size: .9rem;
+            }
 
         }
     }
 
 }
 
+// Footer
+footer{
+    margin-top: 1rem;
+    background-color: var(--blue);
+    color: #ffffff;
+    
+
+    .logo{ 
+            img{
+            padding-top: 1.5rem;
+            width: 9rem;
+        }
+        p{
+            margin:0;
+            font-size: .9rem;
+            font-weight: 500;
+        }
+    }
+
+    .social-links{
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 1rem;
+
+        p{
+               margin-top: 1rem; 
+            }
+        ul li{
+            list-style: none;
+
+           a i{
+            color: #ffffff;
+            padding:.5rem;
+            font-size: 1.6rem;
+            
+            }
+
+
+        }
+    }
+
+    .call{
+        padding-bottom: 1.5rem;
+        p{
+            font-weight: 600;
+            margin: 0.2rem;
+        }
+    }
+
+    .copyright{
+        background-color: var(--light-grey);
+        p{
+            padding-top: .4rem;
+            font-size: .8rem;
+            color: black;
+        }
+    }
+}

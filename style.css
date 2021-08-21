@@ -30,33 +30,56 @@ a {
 }
 
 header {
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
-  margin: 5%;
 }
 header img {
   width: 7rem;
 }
-header #menubutton {
-  border: 2px solid var(--blue);
-  color: var(--blue);
-  background-color: var(--light-grey);
-  padding: 0.16rem 0.9rem;
-  display: inline-block;
-  font-size: 0.8rem;
-  border-radius: 7%;
-}
-header #menubutton:hover {
-  border: none;
+header .hide-desktop img {
+  width: 25px;
   cursor: pointer;
-  background-color: var(--blue);
-  color: white;
 }
-header nav {
+header .hide-mobile {
   display: none;
 }
-header nav ul li {
+header nav ul {
   list-style: none;
+  width: 90%;
+  background-color: #00468b;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 4;
+  height: 90%;
+}
+header nav ul li {
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: left;
+  list-style: none;
+}
+header nav ul li:first-of-type {
+  margin-top: 2rem;
+}
+header nav ul li a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  opacity: 0.6;
+}
+header nav ul img {
+  width: 25px;
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+}
+header nav ul img:hover {
+  opacity: 0.8;
 }
 
 .hero {

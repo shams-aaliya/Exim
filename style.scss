@@ -32,35 +32,65 @@ a{
 
 // header
 header{
+    
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
-    margin: 5%;
-
+   
     img{
         width: 7rem;
     }
-    #menubutton{
-        border: 2px solid var(--blue);
-        color:var(--blue);
-        background-color: var(--light-grey);
-        padding: 0.16rem 0.9rem;
-        display: inline-block;
-        font-size: .8rem;
-        border-radius: 7%;
-    
-    &:hover{
-        border: none;
+
+    .hide-desktop img{
+        width: 25px;
         cursor: pointer;
-        background-color:var(--blue);
-        color: white;
     }
-    }
-    nav{
-        display: none;
-       ul li{ 
-           list-style: none;
-       }
     
+   .hide-mobile{
+       display: none;
+   }
+    nav ul{
+        list-style: none;
+        width: 90%;
+        background-color: rgba(0,70,139, 1);
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 4;
+        height: 90%;
+       
+        li{
+            color: #ffffff;
+            padding: 1.5rem;
+           text-align: left;
+           list-style: none;
+
+           &:first-of-type{
+               margin-top: 2rem;
+           }
+          a{
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+
+            &:hover{
+                opacity: .6;
+            }
+          }
+        }
+
+        img{
+            width: 25px;
+            position: absolute;
+            right: 10%;
+            cursor: pointer;
+
+            &:hover{
+                opacity: .8;
+            }
+        }
+        
 }
 }
 // HomePage

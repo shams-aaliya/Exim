@@ -22,10 +22,13 @@
             </a>
             
         </div>
-        <button id="menubutton"><i class="fas fa-bars"></i> Menu</button>
         <nav>
-            
-            <ul>
+        <a  href="#" class="hide-desktop" id="menu"> <img src="ham.svg" alt="Menu"></a>
+        <ul id="nav" class="show-desktop hide-mobile">
+            <li>
+                
+                <img id="exit" src="exit.svg" alt="Exit button">
+            </li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#products">Our Products</a></li>
@@ -33,7 +36,6 @@
              
             </ul>
         </nav>
-        
     </header>
     <section class="hero" id="home">
         <div class="1st-section">
@@ -207,9 +209,25 @@
         </div>    
 
         <div class="copyright">
-            <p>&#169;2021 Exim Enterprises.Mumbai, Maharashtra. Designed & Developed by Shams Aaliya. All Rights Reserved</p>
+            <p>&#169;2021 Exim Enterprises.Mumbai, Maharashtra.Designed & Developed by Shams Aaliya. All Rights Reserved</p>
         </div>
     </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+    
+        menu.addEventListener('click', function (e) {
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+        });
+    
+        exit.addEventListener('click', function (e) {
+          nav.classList.add('hide-mobile');
+          e.preventDefault();
+        });
+      </script>
 
 </body>
 </html>

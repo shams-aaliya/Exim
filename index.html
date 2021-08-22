@@ -14,34 +14,36 @@
     <script src="https://kit.fontawesome.com/d8749e6d0b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <div id="home">
 
+        <header>
+            <div class="logo">
+                
             <a href="#home">
                 <img src="logo.png" alt="Exim Logo">
             </a>
             
         </div>
         <nav>
-        <a  href="#" class="hide-desktop" id="menu"> <img src="ham.svg" alt="Menu"></a>
-        <ul id="nav" class="show-desktop hide-mobile">
-            <li>
-                
+            <a  href="#" class="hide-desktop" id="menu"> <img src="ham.svg" alt="Menu"></a>
+            <ul id="nav" class="show-desktop hide-mobile">
+                <li>
+                    
                 <img id="exit" src="exit.svg" alt="Exit button">
             </li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#products">Our Products</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-             
+                
             </ul>
         </nav>
     </header>
-    <section class="hero" id="home">
+    <section class="hero" >
         <div class="1st-section">
             <h1>Exim Enterprises</h1>
             <p>
-            Your single stop for manufacturing all kinds of corporate gifts.
+                Your single stop for manufacturing all kinds of corporate gifts.
             </p>
             <a href="#about" class="button-dark">Know More</a>
             <a href="#contact" class="button-light">Contact Us</a>
@@ -50,6 +52,7 @@
             <img src="" alt="Photo of Bag ">
         </div>
     </section>
+</div>
     <section class="about" id="about">
         <h1>About Us</h1>
         <div class="content">
@@ -217,9 +220,18 @@
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');
-    
+        
+        document.onclick = function(e){
+           if( e.srcElement.id == ""){
+               nav.classList.add('hide-mobile');
+              
+           }
+          
+        }
+
         menu.addEventListener('click', function (e) {
-          nav.classList.toggle('hide-mobile');
+          nav.classList.toggle('hide-mobile'); 
+          e.srcElement.id = "menu"
           e.preventDefault();
         });
     

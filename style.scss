@@ -21,11 +21,11 @@ body{
     text-align: center;
     background-color: var(--light-grey);
     h1{
-        
-        padding: 4rem;
         font-size: 2.2rem;
         text-transform: uppercase;
         color: #013c77d8;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         letter-spacing: .12rem;
     }
 }
@@ -35,13 +35,19 @@ a{
 
 // header
 header{
-    
+    position: fixed;
+    top: 0;
+    background-color: #fff;
     padding: 1.5rem;
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    box-shadow: 0px 7px 6px -3px rgba(0,0,0,0.34);
+    height: 75px;
    
     img{
         width: 7rem;
+        cursor: pointer;
     }
 
     .hide-desktop img{
@@ -107,8 +113,8 @@ header{
     
     h1{
         font-size: clamp(2.5rem, 10vw, 6rem);
-        margin-top: 8rem;
-        padding: 0;
+        padding-top: 13rem;
+        padding-bottom: 0;
         color: var(--blue);
         letter-spacing: .12rem;
     }
@@ -174,6 +180,11 @@ header{
 .about{
     background-color: #fff;
     padding:1.1rem;
+
+    // h1{
+    //     padding-top: 4rem;
+    //     padding-bottom: 4rem;
+    // }
    
     p{
        font-size: 1rem;

@@ -44,6 +44,7 @@ header {
   justify-content: space-between;
   box-shadow: 0px 7px 6px -3px rgba(0, 0, 0, 0.34);
   height: 75px;
+  z-index: 2;
 }
 header img {
   width: 7rem;
@@ -87,7 +88,8 @@ header nav ul li a:hover {
 header nav ul img {
   width: 25px;
   position: absolute;
-  right: 10%;
+  right: 7%;
+  top: 5%;
   cursor: pointer;
 }
 header nav ul img:hover {
@@ -95,25 +97,33 @@ header nav ul img:hover {
 }
 
 .hero {
-  margin-left: 1.1rem;
+  background: #abbaab;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #abbaab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-left: 1.1rem;
   text-align: left;
   height: 100vh;
 }
-.hero h1 {
+.hero .first-section {
+  width: 60%;
+}
+.hero .first-section h1 {
   font-size: clamp(2.5rem, 10vw, 6rem);
   padding-top: 13rem;
   padding-bottom: 0;
   color: var(--blue);
   letter-spacing: 0.12rem;
 }
-.hero p {
+.hero .first-section p {
   font-size: 1.2rem;
   padding-top: 1.7rem;
   padding-right: 1.1rem;
   line-height: 1.5rem;
   letter-spacing: 0.07rem;
 }
-.hero a {
+.hero .first-section a {
   font-size: 0.9rem;
   margin-right: 2.4rem;
   padding: 1em 3em;
@@ -121,32 +131,29 @@ header nav ul img:hover {
   font-weight: 500;
   display: inline-block;
 }
-.hero a:last-of-type {
+.hero .first-section a:last-of-type {
   margin-bottom: 4.2rem;
 }
-.hero .button-dark {
+.hero .first-section .button-dark {
   border: 2px solid var(--blue);
   background-color: var(--blue);
   color: #fff;
 }
-.hero .button-dark:hover {
+.hero .first-section .button-dark:hover {
   border: 2px solid var(--blue);
   color: var(--blue);
   background-color: var(--light-grey);
   transition: ease-in 0.3s;
 }
-.hero .button-light {
+.hero .first-section .button-light {
   border: 2px solid var(--blue);
   color: var(--blue);
 }
-.hero .button-light:hover {
+.hero .first-section .button-light:hover {
   border: 2px solid var(--blue);
   background-color: var(--blue);
   color: #fff;
   transition: ease-in 0.2s;
-}
-.hero img {
-  display: none;
 }
 
 .about {
@@ -157,13 +164,25 @@ header nav ul img:hover {
   font-size: 1rem;
   line-height: 1.5;
   text-align: left;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .Vision {
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  position: relative;
+}
+.Vision::after {
+  content: "";
+  background: url("/images/Corporate gifts.png");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 .Vision .card {
   padding: 1.5rem;
@@ -173,9 +192,10 @@ header nav ul img:hover {
   border-radius: 3%;
   box-shadow: 0px 8px 24px #959da5;
   border-radius: 3%;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  z-index: 1;
 }
 .Vision .card h3 {
   padding: 1rem;
@@ -285,10 +305,8 @@ footer .social-links p {
 footer .social-links ul li {
   list-style: none;
 }
-footer .social-links ul li a i {
-  color: #ffffff;
-  padding: 0.5rem;
-  font-size: 1.6rem;
+footer .social-links ul li .i {
+  padding: 1rem;
 }
 footer .call {
   padding-bottom: 1.5rem;
@@ -299,9 +317,10 @@ footer .call p {
 }
 footer .copyright {
   background-color: var(--light-grey);
+  height: 70px;
 }
 footer .copyright p {
-  padding-top: 0.4rem;
-  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
   color: black;
 }/*# sourceMappingURL=style.css.map */

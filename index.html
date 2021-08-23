@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/d8749e6d0b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cc26b25ce2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-        <header>
+        <header id="header" class="fixed">
             <div class="logo">
                 
             <a href="#home">
@@ -40,7 +40,7 @@
         </nav>
     </header>
     <section class="hero" id="home">
-        <div class="1st-section">
+        <div class="first-section">
             <h1>Exim Enterprises</h1>
             <p>
                 Your single stop for manufacturing all kinds of corporate gifts.
@@ -48,17 +48,18 @@
             <a href="#about" class="button-dark">Know More</a>
             <a href="#contact" class="button-light">Contact Us</a>
         </div>
-        <div class="2nd-section">
-            <img src="" alt="Photo of Bag ">
-        </div>
+      
     </section>
     <section class="about" id="about">
         <h1>About Us</h1>
-        <div class="content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet debitis explicabo eos accusantium voluptates fugiat qui, expedita incidunt, minima earum est in eius iure magni reprehenderit aliquid quam aliquam quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sunt eos repudiandae? Nostrum repellendus accusantium quo officia vel temporibus architecto rerum, facere totam suscipit quod. Non quas sapiente labore eaque!</p>
-        </div>
-        <div class="graphic">
-            <img src="#" alt="Exim Enterprises">
+        <div class="about-content">
+
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet debitis explicabo eos accusantium voluptates fugiat qui, expedita incidunt, minima earum est in eius iure magni reprehenderit aliquid quam aliquam quidem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sunt eos repudiandae? Nostrum repellendus accusantium quo officia vel temporibus architecto rerum, facere totam suscipit quod. Non quas sapiente labore eaque!</p>
+            </div>
+            <div class="graphic">
+                <img src="/images/travel bags main.png" alt="Travel Bags">
+            </div>
         </div>
     </section>
     <section class="Vision">
@@ -199,9 +200,9 @@
         <div class="social-links">
             <p>Social Links</p>
             <ul>
-                <li><a href="https://www.facebook.com/eximent/"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/_exim_enterprises_/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://g.page/exim-enterprises?share"><i class="fab fa-google"></i></a></li>
+                <li><a href="https://www.facebook.com/eximent/"><i class="fab fa-facebook fa-lg"></i></a></li>
+                <li><a href="https://www.instagram.com/_exim_enterprises_/"><i class="fab fa-instagram fa-lg"></i></a></li>
+                <li><a href="https://g.page/exim-enterprises?share"><i class="fab fa-google fa-lg"></i></a></li>
             </ul>
 
         </div>
@@ -216,10 +217,12 @@
     </footer>
 
     <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('nav');
-        var exit = document.getElementById('exit');
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('nav');
+        const exit = document.getElementById('exit');
+        const header = document.getElementById('header');
         
+        // To auto-close menu when clicked on a link
         document.onclick = function(e){
            if( e.srcElement.id == ""){
                nav.classList.add('hide-mobile');
@@ -228,16 +231,19 @@
           
         }
 
+        // To open the menu
         menu.addEventListener('click', function (e) {
           nav.classList.toggle('hide-mobile'); 
           e.srcElement.id = "menu"
           e.preventDefault();
         });
-    
+        // To close the menu
         exit.addEventListener('click', function (e) {
           nav.classList.add('hide-mobile');
           e.preventDefault();
         });
+
+
       </script>
 
 </body>

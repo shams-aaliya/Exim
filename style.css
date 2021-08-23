@@ -97,10 +97,10 @@ header nav ul img:hover {
 }
 
 .hero {
-  background: #abbaab;
+  background: #d3d9df;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffffff, #abbaab);
+  background: linear-gradient(to right, #ffffff, #d3d9df);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-left: 1.1rem;
   text-align: left;
@@ -125,18 +125,15 @@ header nav ul img:hover {
 }
 .hero .first-section a {
   font-size: 0.9rem;
-  margin-right: 2.4rem;
-  padding: 1em 3em;
-  margin-top: 2rem;
+  padding-right: 2.4rem;
+  margin-top: 1.5rem;
   font-weight: 500;
   display: inline-block;
-}
-.hero .first-section a:last-of-type {
-  margin-bottom: 4.2rem;
 }
 .hero .first-section .button-dark {
   border: 2px solid var(--blue);
   background-color: var(--blue);
+  padding: 0.9em 1.8em;
   color: #fff;
 }
 .hero .first-section .button-dark:hover {
@@ -148,6 +145,7 @@ header nav ul img:hover {
 .hero .first-section .button-light {
   border: 2px solid var(--blue);
   color: var(--blue);
+  padding: 0.9em 1.8em;
 }
 .hero .first-section .button-light:hover {
   border: 2px solid var(--blue);
@@ -217,7 +215,8 @@ header nav ul img:hover {
   margin: 0.8rem;
 }
 .product-section img {
-  width: 80%;
+  height: 40%;
+  width: 50%;
 }
 .product-section h4 {
   font-size: 1rem;

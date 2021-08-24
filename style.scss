@@ -9,6 +9,7 @@
 *,*::before,*::after{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-size: 16px;
 }
 html{
@@ -198,6 +199,13 @@ header{
            color: rgb(53, 43, 43);
        }
     }
+
+    .graphic{
+        display: none;
+        img{
+            width: 290px;
+        }
+    }
   
 }
 
@@ -269,8 +277,6 @@ header{
     
     img{
         width: 80%;
-        
-        
     }
 
     h4{
@@ -379,7 +385,8 @@ footer{
 
         ul li{
             list-style: none;
-            padding: .8rem;
+            padding-top: 1.2rem;
+            
 
            &:hover{
                opacity: .7;

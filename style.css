@@ -8,6 +8,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-size: 16px;
 }
 
@@ -169,6 +170,12 @@ header nav ul img:hover {
   font-size: 0.9rem;
   color: #352b2b;
 }
+.about .graphic {
+  display: none;
+}
+.about .graphic img {
+  width: 290px;
+}
 
 .Vision {
   display: flex;
@@ -305,7 +312,7 @@ footer .social-links {
 }
 footer .social-links ul li {
   list-style: none;
-  padding: 0.8rem;
+  padding-top: 1.2rem;
 }
 footer .social-links ul li:hover {
   opacity: 0.7;

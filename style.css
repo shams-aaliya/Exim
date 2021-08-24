@@ -19,14 +19,13 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   text-align: center;
-  background-color: var(--light-grey);
 }
 body h1 {
-  font-size: 2.2rem;
+  font-size: clamp(2.3rem,10vw, 4rem);
   text-transform: uppercase;
   color: #013c77d8;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   letter-spacing: 0.12rem;
 }
 
@@ -156,13 +155,19 @@ header nav ul img:hover {
 
 .about {
   background-color: #fff;
-  padding: 1.1rem;
+  padding: 1rem;
 }
 .about p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   text-align: left;
-  padding: 2rem;
+  padding: 1rem;
+  font-weight: 500;
+  color: #352b2b;
+}
+.about p strong {
+  font-size: 0.9rem;
+  color: #352b2b;
 }
 
 .Vision {
@@ -173,8 +178,8 @@ header nav ul img:hover {
 }
 .Vision::after {
   content: "";
-  background: url("/images/Corporate gifts.png");
-  opacity: 0.5;
+  background: url("images/Corporate gifts.png");
+  opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -183,8 +188,8 @@ header nav ul img:hover {
   z-index: -1;
 }
 .Vision .card {
-  padding: 1.5rem;
-  margin: 1.4rem auto;
+  padding: 1rem;
+  margin: 1rem auto;
   overflow: hidden;
   border: 0.5px solid var(--dark-grey);
   border-radius: 3%;
@@ -204,7 +209,7 @@ header nav ul img:hover {
 .Vision .card p {
   font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
   color: rgba(0, 0, 0, 0.76);
 }
 
@@ -212,27 +217,28 @@ header nav ul img:hover {
   background-color: #fff;
 }
 .product-section .product-item {
-  margin: 0.8rem;
+  margin: 1.5rem;
+  border: 0.5px solid #dbdada;
+  box-shadow: 0px 8px 8px #959da5;
 }
 .product-section img {
-  height: 40%;
-  width: 50%;
+  width: 80%;
 }
 .product-section h4 {
   font-size: 1rem;
-  font-weight: 400;
-  padding-bottom: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: #e3ebf3;
 }
 
 .clients {
+  background-color: var(--light-grey);
   display: flex;
   overflow-x: hidden;
   padding: 2rem;
 }
 
-.contact {
-  background-color: #ffffff;
-}
 .contact .form {
   margin: 1rem;
   padding: 1rem;
@@ -280,12 +286,11 @@ header nav ul img:hover {
 }
 
 footer {
-  margin-top: 1rem;
   background-color: var(--blue);
   color: #ffffff;
 }
 footer .logo img {
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
   width: 9rem;
 }
 footer .logo p {
@@ -296,27 +301,28 @@ footer .logo p {
 footer .social-links {
   text-transform: uppercase;
   font-weight: 600;
-  padding: 1rem;
-}
-footer .social-links p {
-  margin-top: 1rem;
+  padding: 2rem;
 }
 footer .social-links ul li {
   list-style: none;
+  padding: 0.8rem;
 }
-footer .social-links ul li .i {
-  padding: 1rem;
+footer .social-links ul li:hover {
+  opacity: 0.7;
+}
+footer .social-links ul li a {
+  color: #fff;
 }
 footer .call {
   padding-bottom: 1.5rem;
 }
 footer .call p {
   font-weight: 600;
-  margin: 0.2rem;
 }
 footer .copyright {
   background-color: var(--light-grey);
-  height: 70px;
+  min-height: 70px;
+  height: 100%;
 }
 footer .copyright p {
   padding-top: 1.5rem;

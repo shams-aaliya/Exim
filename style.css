@@ -244,6 +244,7 @@ header nav ul img:hover {
   display: flex;
   overflow-x: hidden;
   padding: 2rem;
+  display: none;
 }
 
 .contact .form {

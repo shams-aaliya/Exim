@@ -29,12 +29,12 @@
             <ul id="nav" class="show-desktop hide-mobile">
                 <li>
                     
-                <img id="exit" src="exit.svg" alt="Exit button">
+                <img id="exit" class="hide-desktop" src="exit.svg" alt="Exit button">
             </li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#products">Our Products</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
                 
             </ul>
         </nav>
@@ -45,8 +45,11 @@
             <p>
                 Your single stop for manufacturing all kinds of corporate gifts.
             </p>
-            <a href="#about" class="button-dark">Know More</a>
-            <a href="#contact" class="button-light">Contact Us</a>
+            <div class="buttons">
+
+                <a href="#about" class="button-dark">Know More</a>
+                <a href="#contact" class="button-light">Contact Us</a>
+            </div>
         </div>
       
     </section>
@@ -179,66 +182,82 @@
     </section>
     <section class="contact" id="contact">
         <h1>Contact US</h1>
-        <div class="form">
-            <form action="#displaymessage" >
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="contact">Contact:</label>
-                <input type="text" name="contact" id="contact">
-                <label for="city">City</label>
-                <input type="text" name="city" id="city">
-                <input type="submit" value="Submit">
-            </form>
 
-            <div class="display-message" id="display-message">
-                <p>Thank you for reaching out to us. We will get in touch with you as soon as possible</p>
-            </div>
+        <div class="contact-item">
 
-        </div>
-        <div class="companycontactdetails">
-            <div class="contact-item">
-                <h4>Opening hours</h4>
-                <p>Monday-Saturday </br>
-                    9am- 7pm </br>
-                    Sunday is closed
-                </p>    
+            <div class="form">
+                <h2>Send Us a Message</h2>
+                <form action="#displaymessage" >
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="contact">Contact:</label>
+                    <input type="text" name="contact" id="contact">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                    <input type="submit" value="Submit">
+                </form>
+                
+                <div class="display-message" id="display-message">
+                    <p>Thank you for reaching out to us. We will get in touch with you as soon as possible</p>
+                </div>
+                
             </div>
-            <div class="contact-item">
-                <h4>Address:</h4>
-                <p>Plot No-575, Gala No-6 </br>
-                    Mukund Nagar, Jetha Compound </br>
-                    Dharavi, Sion-East, Mumbai-400017
-                </p>    
-            </div>
-            <div class="contact-item">
-                <h4>Support</h4>
-              
-                <p>+91- 9920035147 </br>
-                    eximenterprises@yahoo.in
-                </p>    
+            <div class="companycontactdetails">
+                <div class="contact-items">
+                    <h4>Opening hours</h4>
+                    <p>Monday-Saturday </br>
+                        9am- 7pm </br>
+                        Sunday is closed
+                    </p>    
+                </div>
+                <div class="contact-items">
+                    <h4>Address:</h4>
+                    <p>Plot No-575, Gala No-6 </br>
+                        Mukund Nagar, Jetha Compound </br>
+                        Dharavi, Sion-East, Mumbai-400017
+                    </p>    
+                </div>
+                <div class="contact-items">
+                    <h4>Support</h4>
+                    
+                    <p>+91- 9920035147 </br>
+                        +91-9321193976 </br>
+                        exim.enterprises@yahoo.in
+                    </p>    
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="logo">
-            <img src="logo-light.png" alt="Exim Enterprises logo">
-            <p>-Your one stop corporate gift solution</p>
-        </div>
-        <div class="social-links">
-            <p>Social Links</p>
-            <ul>
-                <li><a href="https://www.facebook.com/eximent/"><i class="fab fa-facebook fa-lg"></i></a></li>
-                <li><a href="https://www.instagram.com/_exim_enterprises_/"><i class="fab fa-instagram fa-lg"></i></a></li>
-                <li><a href="https://g.page/exim-enterprises?share"><i class="fab fa-google fa-lg"></i></a></li>
-            </ul>
+        <div class="footer">
 
+            <div class="logo">
+                <img src="logo-light.png" alt="Exim Enterprises logo">
+                <p>-Your one stop corporate gift solution</p>
+            </div>
+        <div class="footer-items">
+            
+            <div class="social-links">
+                <p>Social Links</p>
+                <div class="social-icons">
+                    
+                    <ul>
+                        <li><a href="https://www.facebook.com/eximent/"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li><a href="https://www.instagram.com/_exim_enterprises_/"><i class="fab fa-instagram fa-lg"></i></a></li>
+                        <li><a href="https://g.page/exim-enterprises?share"><i class="fab fa-google fa-lg"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="call">
+                <p>Call Us:</p>
+                <p>+91-9920035147</p>
+                
+            </div>    
         </div>
-        <div class="call">
-            <p>Call Us:</p>
-            <p>+91-9920035147</p>
-        </div>    
-
+        
+    </div>
         <div class="copyright">
             <p>&#169;2021 Exim Enterprises.Mumbai, Maharashtra.Designed & Developed by Shams Aaliya. All Rights Reserved</p>
         </div>

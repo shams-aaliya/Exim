@@ -22,7 +22,7 @@ body {
   text-align: center;
 }
 body h1 {
-  font-size: clamp(2.3rem,10vw, 4rem);
+  font-size: 2.3rem;
   text-transform: uppercase;
   color: #013c77d8;
   padding-top: 4rem;
@@ -104,13 +104,14 @@ header nav ul img:hover {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-left: 1.1rem;
   text-align: left;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 .hero .first-section {
   width: 60%;
 }
 .hero .first-section h1 {
-  font-size: clamp(2.5rem, 10vw, 6rem);
+  font-size: clamp(2.5rem, 10vw, 5rem);
   padding-top: 13rem;
   padding-bottom: 0;
   color: var(--blue);
@@ -128,7 +129,8 @@ header nav ul img:hover {
   padding-right: 2.4rem;
   margin-top: 1.5rem;
   font-weight: 500;
-  display: inline-block;
+  display: block;
+  max-width: 135px;
 }
 .hero .first-section .button-dark {
   border: 2px solid var(--blue);
@@ -139,13 +141,14 @@ header nav ul img:hover {
 .hero .first-section .button-dark:hover {
   border: 2px solid var(--blue);
   color: var(--blue);
-  background-color: var(--light-grey);
+  background-color: #fff;
   transition: ease-in 0.3s;
 }
 .hero .first-section .button-light {
   border: 2px solid var(--blue);
   color: var(--blue);
   padding: 0.9em 1.8em;
+  margin-bottom: 1rem;
 }
 .hero .first-section .button-light:hover {
   border: 2px solid var(--blue);
@@ -247,6 +250,9 @@ header nav ul img:hover {
   display: none;
 }
 
+.contact {
+  padding-bottom: 2rem;
+}
 .contact .form {
   margin: 1rem;
   padding: 1rem;
@@ -311,9 +317,14 @@ footer .social-links {
   font-weight: 600;
   padding: 2rem;
 }
+footer .social-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 footer .social-links ul li {
   list-style: none;
-  padding-top: 1.2rem;
+  padding-top: 1.4rem;
 }
 footer .social-links ul li:hover {
   opacity: 0.7;
@@ -336,4 +347,163 @@ footer .copyright p {
   padding-top: 1.5rem;
   font-size: 0.9rem;
   color: black;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+
+  .hero .first-section .buttons a {
+    display: inline-block;
+    max-width: 80%;
+    margin-right: 3rem;
+  }
+  .hero .first-section .buttons a:last-of-type {
+    margin-right: 0;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo {
+    padding-bottom: 1rem;
+  }
+
+  .footer-items {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-items .social-links {
+    border: 5px solid var(--dark-grey);
+  }
+  .footer-items .call {
+    border-left: 3px solid #fff;
+    border: 5px solid var(--dark-grey);
+    height: 100%;
+    padding-top: 1rem;
+  }
+  .footer-items .call p {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  header .show-desktop {
+    display: flex;
+  }
+  header .hide-desktop {
+    display: none;
+  }
+  header nav ul {
+    position: inherit;
+    top: 0;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  header nav ul li {
+    padding: 0.3rem 1.4rem;
+  }
+  header nav ul li:first-of-type {
+    display: none;
+  }
+  header nav ul li a {
+    color: var(--blue);
+    font-size: 0.9rem;
+  }
+  header nav ul li:hover {
+    opacity: 0.9;
+  }
+
+  .Vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.6rem;
+    padding: 0;
+  }
+  .Vision .card {
+    padding: 0.5rem;
+  }
+  .Vision .card h3 {
+    font-size: 0.9rem;
+  }
+  .Vision .card p {
+    font-size: 0.7rem;
+  }
+
+  .contact {
+    padding: 0;
+  }
+
+  footer .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer .footer-items .social-links, footer .footer .footer-items .call {
+    border: none;
+    padding: 0;
+    padding: 2.5rem;
+  }
+  footer .footer .footer-items .call p {
+    padding-top: 0;
+  }
+  footer .footer .footer-items .call p:last-of-type {
+    padding-top: 0.5rem;
+  }
+}
+@media screen and (min-width: 1023px) {
+  html {
+    font-size: 18px;
+  }
+
+  header nav ul li {
+    padding: 0.3rem 1.8rem;
+  }
+  header nav ul li a {
+    font-size: 1.1rem;
+  }
+
+  .about p {
+    letter-spacing: 0.015rem;
+    line-height: 1.7rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-item .form {
+    margin: 0;
+    padding: 4rem 3rem;
+  }
+  .contact-item .form h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .contact-item .form input {
+    margin-bottom: 1.2rem;
+  }
+  .contact-item .form input[type=submit] {
+    margin-top: 2.5rem;
+  }
+  .contact-item .companycontactdetails {
+    margin: 0;
+    padding: 2.5rem;
+    background-color: var(--light-grey);
+  }
+  .contact-item .companycontactdetails .contact-items {
+    padding: 0.8rem;
+    margin: 1rem;
+    color: var(--blue);
+    font-weight: 500;
+    box-shadow: 0px 0px 2px 2px #959da5;
+  }
 }/*# sourceMappingURL=style.css.map */

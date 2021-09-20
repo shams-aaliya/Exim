@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 :root {
   --blue: #004489;
-  --light-grey: #d3d9df;
+  --light-grey: #e3ebf3;
   --dark-grey: #b9cbdd;
 }
 
@@ -280,7 +280,6 @@ header nav ul img:hover {
   border: 2px solid var(--blue);
   background-color: var(--blue);
   color: #fff;
-  box-shadow: 0px 8px 24px #666c72;
 }
 .contact .form input[type=submit]:hover {
   border: 2px solid var(--blue);
@@ -289,13 +288,20 @@ header nav ul img:hover {
   transition: ease-in 0.3s;
 }
 .contact .companycontactdetails {
-  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.contact .companycontactdetails .contact-item {
+.contact .companycontactdetails .contact-items {
   padding: 1.3rem;
+  max-width: 100%;
+  width: 100%;
   background-color: var(--light-grey);
 }
-.contact .companycontactdetails .contact-item p {
+.contact .companycontactdetails .contact-items a {
+  text-decoration: none;
+  color: var(--blue);
   font-size: 0.9rem;
 }
 
@@ -337,6 +343,9 @@ footer .call {
 }
 footer .call p {
   font-weight: 600;
+}
+footer .call a {
+  color: #fff;
 }
 footer .copyright {
   background-color: var(--light-grey);
